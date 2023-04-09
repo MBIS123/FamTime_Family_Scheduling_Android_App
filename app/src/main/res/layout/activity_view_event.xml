@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ViewEventActivity"
+    android:background="@drawable/whale">
+
+    <ImageButton
+        android:id="@+id/btn_AddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_Date"
+        android:layout_alignBottom="@+id/tv_Date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edt_background"
+        android:src="@drawable/add_event_icon" />
+
+    <TextView
+        android:id="@+id/tv_OurActivity"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="190dp"
+        android:text="Our activity"
+        android:textColor="#0E829F"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/tv_OurActivity"
+        android:layout_alignBottom="@+id/tv_OurActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="-1dp"
+        android:text="Date :"
+        android:textColor="#0E829F"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_Back"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ourActivityRecyclerView"
+        android:layout_width="386dp"
+        android:layout_height="597dp"
+        android:layout_above="@+id/imgBtn_Back"
+        android:layout_below="@+id/tv_OurActivity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="7dp"
+        tools:listitem="@layout/our_activity_cell"/>
+
+</RelativeLayout>

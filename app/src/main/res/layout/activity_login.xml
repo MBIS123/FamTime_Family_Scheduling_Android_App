@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity"
+    android:background="@drawable/cloud"
+    >
+
+    <ImageView
+        android:id="@+id/famtime_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/famtime_icon"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_Famtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to FamTime"
+        android:layout_below="@id/famtime_logo"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/sky_blue"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Famtime"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:height="30dp"
+        android:background="@drawable/edt_background"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_email"/>
+
+    <TextView
+        android:id="@+id/tv_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Email"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_Password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="20dp"
+        android:height="30dp"
+        android:background="@drawable/edt_background"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_password"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="199dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/edt_Password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/btn_background_skyblue"
+        android:text="Log In" />
+
+    <TextView
+        android:id="@+id/txtv_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="46dp"
+        android:text="Don't have an Account?  Register here" />
+
+    <CheckBox
+        android:id="@+id/rememberMeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_below="@+id/edt_Password"
+        android:layout_alignStart="@+id/edt_Password"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:text="Remember me"
+        android:textColor="@color/sky_blue" />
+
+
+</RelativeLayout>

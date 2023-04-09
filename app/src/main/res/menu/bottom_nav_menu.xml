@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/schedule"
+        android:title="Schedule"
+        android:icon="@drawable/calendar_icon"
+        />
+    <item
+        android:id="@+id/chatroom"
+        android:title="Chatroom"
+        android:icon="@drawable/chat_icon"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/person_icon"
+        />
+
+</menu>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CreateFamGroupActivity"
+    android:background="@drawable/cloud">
+
+    <TextView
+        android:id="@+id/tv_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before you start .... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/sky_blue"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_familyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_joinAGrp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:inputType="number"
+        android:hint="Enter the family code here"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/btn_Join"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edt_familyCode"
+        android:layout_alignStart="@+id/tv_joinAGrp"
+        android:layout_alignEnd="@+id/btn_CreateFamilyGroup"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/btn_background_skyblue"
+        android:text="Join" />
+
+    <TextView
+        android:id="@+id/tv_Or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Join"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="191dp"
+        android:text="OR"
+        android:textColor="@color/sky_blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_createGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Or"
+        android:layout_alignStart="@+id/tv_joinAGrp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="I am the first FamTime user in my family"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_CreateFamilyGroup"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_createGrp"
+
+
+        android:layout_alignStart="@+id/tv_createGrp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/btn_background_skyblue"
+        android:text="create a family group" />
+
+    <TextView
+        android:id="@+id/tv_joinAGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_before"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="58dp"
+        android:text=" Join a family group"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="339dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:elevation="4dp"
+        android:scaleType="fitCenter"
+        android:stateListAnimator="@drawable/button_shadow" />
+
+
+</RelativeLayout>

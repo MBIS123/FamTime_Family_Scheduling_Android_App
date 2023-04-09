@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44146001783",
+    "firebase_url": "https://famtime-7a3de-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "famtime-7a3de",
+    "storage_bucket": "famtime-7a3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44146001783:android:09dcabad05cfca3e0e4372",
+        "android_client_info": {
+          "package_name": "com.example.famtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44146001783-2jvbbn0qithcu4aafauv4q4voig8ijhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_3A-wGeo7WLq7FCOBdpiVTYnDdUE8NqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44146001783-2jvbbn0qithcu4aafauv4q4voig8ijhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

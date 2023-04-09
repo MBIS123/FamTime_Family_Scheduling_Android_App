@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenbluegradient"
+    tools:context=".ui.fragment.ProfileFragment"
+    >
+
+
+    <Button
+        android:id="@+id/btn_UpdateProfile"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_FamilyCode"
+        android:layout_alignEnd="@+id/tv_FamilyCode"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_background_skyblue"
+        android:text="Save Changes"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_FamilyCode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_FamilyCode"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FamilyCode"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="197dp"
+        android:layout_height="178dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/person_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignStart="@+id/imgProfilePic"
+        android:layout_alignEnd="@+id/imgProfilePic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:text="Profile Picture"
+        android:textColor="@color/sky_blue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfilePic"
+        app:layout_constraintStart_toStartOf="@+id/imgProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfilePic" />
+
+    <TextView
+        android:id="@+id/tv_UERNAME"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:text="Edit User Name"
+        android:textColor="@color/sky_blue"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_userRename"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/tv_UERNAME"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/reset_name_icon"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_UERNAME"
+        app:layout_constraintTop_toBottomOf="@+id/tv_UERNAME" />
+
+    <TextView
+        android:id="@+id/tv_FamilyCode"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/edt_userRename"
+        android:layout_alignEnd="@+id/edt_userRename"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/family_icon"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="hi"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_userRename"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userRename"
+        app:layout_constraintVertical_bias="0.098" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >

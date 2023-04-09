@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ScheduleFragment"
+    android:background="@drawable/whale"
+    >
+
+
+
+   <CalendarView
+       android:id="@+id/calendarView"
+       android:layout_width="394dp"
+       android:layout_height="332dp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:background="@drawable/calender_style"
+       android:selectedDateVerticalBar="@color/sky_blue"
+       />
+
+   <TextView
+       android:id="@+id/tv_TdyActivity"
+       android:layout_width="180dp"
+       android:layout_height="34dp"
+       android:elevation="2dp"
+       android:text="Today's Activity"
+       android:textColor="@color/white"
+       android:textSize="25dp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.122"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/calendarView"
+       app:layout_constraintVertical_bias="0.047" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/todayActivityRecycleView"
+       android:layout_width="389dp"
+       android:layout_height="299dp"
+       android:layout_marginTop="408dp"
+       android:elevation="10dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:listitem="@layout/today_activity_card" />
+
+   <View
+       android:id="@+id/viewBackground"
+       android:layout_width="match_parent"
+       android:layout_height="474dp"
+       android:background="@drawable/whale"
+       android:elevation="1dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/calendarView"
+       app:layout_constraintVertical_bias="0.095" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
